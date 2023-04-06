@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "genesiz-99896"
-  }
+    "default": "genesizmep"
+  },
+  "targets": {
+    "genesiz-99896": {
+      "hosting": {
+        "tr": [
+          "genesizmep"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

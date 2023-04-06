@@ -565,8 +565,8 @@ video {
   left: 50%;
 }
 
-.left-\[80\%\]{
-  left: 80%;
+.left-\[75\%\]{
+  left: 75%;
 }
 
 .right-0{
@@ -589,28 +589,8 @@ video {
   top: 50%;
 }
 
-.top-\[80\%\]{
-  top: 80%;
-}
-
 .top-\[70\%\]{
   top: 70%;
-}
-
-.left-\[70\%\]{
-  left: 70%;
-}
-
-.left-\[7\%\]{
-  left: 7%;
-}
-
-.left-\[76\%\]{
-  left: 76%;
-}
-
-.left-\[75\%\]{
-  left: 75%;
 }
 
 .z-10{
@@ -1142,28 +1122,20 @@ video {
   border-top-left-radius: 1.5rem;
 }
 
-.border-\[1px\]{
-  border-width: 1px;
-}
-
-.border-\[2px\]{
-  border-width: 2px;
+.border-\[0\.1px\]{
+  border-width: 0.1px;
 }
 
 .border-\[0\.5px\]{
   border-width: 0.5px;
 }
 
-.border-\[0\.25px\]{
-  border-width: 0.25px;
+.border-\[1px\]{
+  border-width: 1px;
 }
 
-.border-\[5px\]{
-  border-width: 5px;
-}
-
-.border-\[0\.1px\]{
-  border-width: 0.1px;
+.border-\[2px\]{
+  border-width: 2px;
 }
 
 .border-b-2{
@@ -1208,10 +1180,6 @@ video {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[0\.\]{
-  border-color: 0.;
 }
 
 .border-b-bgGrey3{
@@ -1506,6 +1474,10 @@ video {
   line-height: 1;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .text-\[6px\]{
   font-size: 6px;
 }
@@ -1523,10 +1495,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[12px\]{
-  font-size: 12px;
 }
 
 .font-black{
@@ -1695,9 +1663,9 @@ p{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.before\:bg-\[url\(\"public\/assets\/homePage\/OurServices\/\$\{data\.img\}\"\)\]::before{
+.before\:bg-\[url\(\"\.\/public\/assets\/homePage\/OurServices\/\$\{data\.img\}\"\)\]::before{
   content: var(--tw-content);
-  background-image: url("public/assets/homePage/OurServices/${data.img}");
+  background-image: url("./public/assets/homePage/OurServices/${data.img}");
 }
 
 .before\:bg-no-repeat::before{
@@ -1968,19 +1936,9 @@ p{
     padding-right: 10rem;
   }
 
-  .md\:py-40{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
-  .md\:py-\[145px\]{
-    padding-top: 145px;
-    padding-bottom: 145px;
-  }
-
-  .md\:py-\[125px\]{
-    padding-top: 125px;
-    padding-bottom: 125px;
+  .md\:py-\[110px\]{
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
 
   .md\:pt-64{

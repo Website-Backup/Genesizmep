@@ -12,7 +12,7 @@ const OnDemandEng = () => {
                <a href='/requestaproposal' className=' flex justify-center items-center'> <button className=' rounded-xl text-center px-4 py-3 bg-black text-white hover:bg-textOrange hover:scale-110 transition-all duration-300'>Get your design done in record time</button></a>
             </div>
             <div>
-                <img className=' mx-auto md:min-w-[300px]' src='/public/assets/homepage/VES.webp'></img>
+                <img className=' mx-auto md:min-w-[300px]' src='./assets/homepage/VES.webp'></img>
             </div>
         </div>
     </div>

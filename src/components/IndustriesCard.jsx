@@ -4,7 +4,7 @@ const Card = ({props}) => {
   return (
     
     <div className='relative'  >
-    <img src={`public/assets/homePage/industries/${props.img}`} className=' grayscale max-h-[300px] min-h-full hover:scale-105 transition duration-500 cursor-pointer w-full'>
+    <img src={`./assets/homePage/industries/${props.img}`} className=' grayscale max-h-[300px] min-h-full hover:scale-105 transition duration-500 cursor-pointer w-full'>
         
     </img>
      <a href={props.link} className='hover:bg-white centered child uppercase items-stretch justify-items-stretch  p-2 max-w-max  hover:text-black text-lg cursor-pointer text-white bg-black'>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const LandingPage = ({props}) => {
-  const background = `../public/assets/homePage/OurServices/${props.img}`;
+  const background = `./assets/homePage/OurServices/${props.img}`;
   const styles = {
     backgroundImage: `url(${background})` ,
   backgroundSize: 'cover',

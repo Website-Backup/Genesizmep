@@ -10,7 +10,7 @@ const Landing = () => {
   }
 
   return (
-    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-[75px] md:py-[125px]'>
+    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-[75px] md:py-[110px]'>
         <div className=' bg-black py-10 col-start-1 col-end-2 '>
             <div className=' py-4 px-2  bg-textOrange text-white text-center '>
                 <h1 className=' font-anton text-6xl mb-4'>OUR CONTACT</h1>
@@ -20,7 +20,7 @@ const Landing = () => {
               <h4 className=' text-3xl font-semibold'>+91-7736188669</h4>
               <p className=' text-2xl'>genesizmeppvtltd@gmail.com</p>
               <p className=' text-2xl'>www.genesizmep.in</p>
-              <img className=' mx-auto' src='public/assets/contactPage/icon.webp'></img>
+              <img className=' mx-auto' src='./assets/contactPage/icon.webp'></img>
             </div>
 
 

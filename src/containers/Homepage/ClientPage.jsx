@@ -43,7 +43,7 @@ const ClientPage = () => {
        
         {
           griditems.map((i)=>
-          (i==="grid7")?(<img className=' col-start-1 col-end-3' src={`public/assets/homePage/grid/${i}.png`}></img>):(<img className='' src={`public/assets/homePage/grid/${i}.png`}></img>)
+          (i==="grid7")?(<img className=' col-start-1 col-end-3' src={`./assets/homePage/grid/${i}.png`}></img>):(<img className='' src={`./assets/homePage/grid/${i}.png`}></img>)
           )
         }
         
