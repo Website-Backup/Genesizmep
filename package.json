@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tail-start": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch"
+    "tail-start": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.47.0",
