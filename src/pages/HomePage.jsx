@@ -9,7 +9,7 @@ import OnDemandEng from '../containers/Homepage/OnDemanEng'
 import Contact from '../containers/Homepage/Contact'
 import Footer from '../containers/Homepage/Footer'
 import OurService from '../containers/Homepage/OurService'
-import { useFirebase } from '../context/firebase'
+import { useFirebase } from '../context/Firebase'
 
 
 const Homepage = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from '../../components/OtherPages/ContactForm'
-import { useFirebase } from '../../context/firebase'
+import { useFirebase } from '../../context/Firebase'
 
 const ContactPage = () => {
 

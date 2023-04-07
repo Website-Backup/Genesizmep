@@ -1,6 +1,6 @@
 import React from 'react'
 import Contact from '../Homepage/Contact'
-import { useFirebase } from '../../context/firebase'
+import { useFirebase } from '../../context/Firebase'
 
 const Landing = () => {
 
