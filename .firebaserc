@@ -1,9 +1,9 @@
 {
   "projects": {
-    "default": "genesizmep"
+    "default": "genesis-mep"
   },
   "targets": {
-    "genesiz-99896": {
+    "genesis-mep": {
       "hosting": {
         "tr": [
           "genesizmep"

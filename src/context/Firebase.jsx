@@ -6,13 +6,13 @@ import { getAnalytics } from "firebase/analytics";
 // Import Required Firebase Utility
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC_5ruSgNX-8XKWkTybXKzHtTMS1y2sfHY",
-  authDomain: "genesiz-99896.firebaseapp.com",
-  projectId: "genesiz-99896",
-  storageBucket: "genesiz-99896.appspot.com",
-  messagingSenderId: "453133674105",
-  appId: "1:453133674105:web:ade39bffb50ac46d4156a8",
-  measurementId: "G-21SRR6P715"
+  apiKey: "AIzaSyAKSWHb3v8UYOdl9ijIDpSU4io-kWIrSFo",
+  authDomain: "genesis-mep.firebaseapp.com",
+  projectId: "genesis-mep",
+  storageBucket: "genesis-mep.appspot.com",
+  messagingSenderId: "1063733452370",
+  appId: "1:1063733452370:web:36b9165985db0278e8c98b",
+  measurementId: "G-0287F5CECF"
 };
 
 const FirebaseContext = createContext(null);

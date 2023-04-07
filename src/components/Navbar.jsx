@@ -48,9 +48,9 @@ console.log(isScrolled);
     <div className=' font-montserrat bg-black text-white sticky md:fixed top-0 left-0  nav flex flex-col md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
     
     <div className={`${isScrolled?"hidden":"visible"}  pb-1 transition-all flex gap-5 w-full mb-3 justify-center  mt-0 text-bgGrey3  border-b-bgGrey3 border-b-[0.5px]`} >
-        <p className={`  text-[12px] font-anton  `}>genesizmeppvtltd@gmail.com</p>
+        <p className={`  text-[12px] md:text-lg font-anton  `}>genesizmeppvtltd@gmail.com</p>
       
-      <p className={` text-[12px]  font-anton text-right`}>+91-7736188669</p>
+      <p className={` text-[12px] md:text-lg  font-anton text-right`}>+91-7736188669</p>
         </div>
         
     <div className=' flex   justify-between w-full'>

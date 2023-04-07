@@ -75,9 +75,9 @@ const data = [
         url:"/contact",
     },
     {
-        name:" REQUEST A PROPOSAL",
+        name:" Request a Proposal",
         isdrop:false,
-        url:"/projects",
+        url:"/requestaproposal",
     },
 
 

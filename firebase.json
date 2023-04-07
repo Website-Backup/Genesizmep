@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "target":"tr",
     "public": "dist",
     "ignore": [
       "firebase.json",

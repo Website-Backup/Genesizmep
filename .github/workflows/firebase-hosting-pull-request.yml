@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GENESIZ_99896 }}'
-          projectId: genesiz-99896
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GENESIS_MEP }}'
+          projectId: genesis-mep
