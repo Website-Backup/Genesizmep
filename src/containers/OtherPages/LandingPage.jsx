@@ -14,8 +14,8 @@ const LandingPage = ({props}) => {
   return (
     <div style={styles} className={`flex  flex-col max-h-max items-stretch py-40 px-10 md:pt-64 `}  >
         
-        <div className=' flex flex-col gap-3 text-left opacity-100 z-10  text-bgGrey3 '>
-            <h6 className=' text-2xl font-jost font-bold'>GENESIZ MEP</h6>
+        <div className=' flex flex-col gap-3 text-left opacity-100 z-10 textShadow text-bgGrey3 '>
+            <h6 className=' text-2xl uppercase font-jost font-bold'>GENESIZ MEP CONSULTANT </h6>
             <h1 className=' uppercase text-6xl font-bold'>
                 {props.name}
             </h1>

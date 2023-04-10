@@ -6,7 +6,7 @@ const Working = () => {
     return (
     <div>
         <div className='flex flex-col justify-center items-center mb-10'>
-            <p className=' text-textGrey mb-10 text-2xl uppercase '>genesiz ENGINEERS</p>
+            <p className=' text-textGrey mb-10 text-2xl uppercase '>genesiz mep CONSULTANT</p>
             <h2 className='text-2xl ss:text-3xl md:text-5xl mb-3'>How It Works?</h2>
             <div className=' bg-textOrange h-[10px] w-20 rounded-3xl'></div>
         </div>

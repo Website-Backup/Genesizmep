@@ -5,7 +5,7 @@ const griditems = ["grid1","grid2","grid8","grid4","grid3","grid6","grid7","grid
 
 const ClientPage = () => {
   return (
-    <motion.div className='flex flex-col md:grid md:grid-cols-3 gap-x-3 mx-8 py-9'
+    <motion.div className='flex flex-col md:grid md:grid-cols-3 gap-x-3 mx-8 '
     initial="hidden"
         whileInView="visible"
         viewport={{once:true,amount:0.5}}
@@ -23,7 +23,7 @@ const ClientPage = () => {
     </h2></div>
     
 
-    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5'>Get you quote</button></a></div>
+    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5'>Get your quote</button></a></div>
     </motion.div>
     
 

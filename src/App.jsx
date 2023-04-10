@@ -47,7 +47,10 @@ const App = () => {
   return (
     <div>
          <BrowserRouter>
+    <header>
     <Navbar></Navbar>
+    </header>
+
       <Routes>
         <Route
           path='/'
@@ -73,7 +76,10 @@ const App = () => {
 
       </Routes>
       <SocialIcon></SocialIcon>
+      <footer>
       <Footer></Footer>
+      </footer>
+
       </BrowserRouter>
     </div>
   )

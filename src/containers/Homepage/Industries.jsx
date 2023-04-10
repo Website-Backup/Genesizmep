@@ -8,7 +8,7 @@ const Industries = () => {
     <div className='mb-16' id='#industries'>
 
   <div className='flex flex-col justify-center items-center '>
-    <h2 className=' text-2xl ss:text-3xl md:text-5xl mb-7 py-8 uppercase text-textOrange'>Genesiz mep engineers</h2>
+    <h2 className=' text-2xl ss:text-3xl md:text-5xl mb-7 py-8 uppercase text-textOrange'>Genesiz mep consultant</h2>
     <p className='text-lg ss:text-xl  mb-6 text-textGrey uppercase'>  HEALTHCARE-hotel-education-airport-malls and Stadium-office   </p>
   </div>
     

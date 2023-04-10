@@ -5,6 +5,7 @@ import { Close,Menu, } from '@styled-icons/material';
 import Dropdown from './Dropdown';
 import {ChevronDown,ChevronRight} from '@styled-icons/bootstrap';
 import data from './Navbardata';
+import { Phone,Email } from '@styled-icons/material';
 
 const Navbar = ({isTopPage}) => {
   const [isMenuOpen,setIsMenuOpen] = useState(false);
@@ -42,15 +43,15 @@ console.log(isScrolled);
 
 
   return (
-    <div>
+    <nav>
 
   
     <div className=' font-montserrat bg-white text-black sticky md:fixed top-0 left-0  nav flex flex-col md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
     
     <div className={`${isScrolled?"hidden":"visible"}  pb-1 transition-all flex gap-5 w-full mb-3 justify-center  mt-0 text-black border-b-black border-b-[0.5px]`} >
-        <p className={`  text-[12px] md:text-lg font-anton  `}>genesizmeppvtltd@gmail.com</p>
+    <p className={`  text-[12px] md:text-lg font-anton  `}>    <Email size={15}></Email> genesizmeppvtltd@gmail.com</p>
       
-      <p className={` text-[12px] md:text-lg  font-anton text-right`}>+91-7736188669</p>
+      <p className={` text-[12px] md:text-lg  font-anton text-right`}><Phone size={15}></Phone> +91-7736188669</p>
         </div>
         
     <div className=' flex   justify-between w-full'>
@@ -73,7 +74,7 @@ console.log(isScrolled);
         
        
         {
-          isAboveMediumScreen? (<div className='flex gap-7 items-center justify-center my-auto text-xl font cursor-pointer'>
+          isAboveMediumScreen? (<div className='flex gap-7 items-center justify-center my-auto text-xl font-semibold cursor-pointer'>
           
           <div><a href='/'>Home </a></div>
             <div className='group/item1'><a >Engineering <ChevronDown size={12}></ChevronDown></a>
@@ -116,7 +117,7 @@ console.log(isScrolled);
     </div>
     {
           isMenuOpen && !isAboveMediumScreen && (
-            <div className={` w-full bg-black text-white nav text-lg sticky ss:text-xl transition duration-10000 ${(isMenuOpen)? "scale-100":"scale-0"} transition-all duration-300 ease-in `}>
+            <div className={` w-full bg-white text-black nav text-lg sticky ss:text-xl transition duration-10000 ${(isMenuOpen)? "scale-100":"scale-0"} transition-all duration-300 ease-in `}>
             {
               data.map((item)=><Dropdown item={item}></Dropdown>)
             }
@@ -128,7 +129,7 @@ console.log(isScrolled);
         
 
 
-    </div>
+    </nav>
   )
 }
 

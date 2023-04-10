@@ -1,5 +1,6 @@
 import React from 'react'
-import { Phone,Email } from '@styled-icons/material'
+import { Phone,Email, } from '@styled-icons/material'
+import { Instagram,Facebook } from '@styled-icons/boxicons-logos';
 
 
 const Footer = () => {
@@ -48,6 +49,10 @@ const Footer = () => {
             <a href='/contact'>CONTACT</a>
             
             <a href='/requestaproposal'>REQUEST A PROPOSAL</a>
+            <div className=' mt-2 cursor-pointer flex  gap-2'> <a href='https://m.facebook.com/profile.php?id=100086182247566'><Facebook size={30}></Facebook></a><a href='https://instagram.com/genesizmep?igshid=YmMyMTA2M2Y='><Instagram size={30}></Instagram></a></div>
+           
+
+
             </div>
            
       

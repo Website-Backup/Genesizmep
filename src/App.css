@@ -124,3 +124,7 @@
   .nav{
     z-index: 100;
   }
+
+  .textShadow{
+    text-shadow: 3px 3px #000000 ;
+  }
