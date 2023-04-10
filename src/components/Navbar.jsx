@@ -45,9 +45,9 @@ console.log(isScrolled);
     <div>
 
   
-    <div className=' font-montserrat bg-black text-white sticky md:fixed top-0 left-0  nav flex flex-col md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
+    <div className=' font-montserrat bg-white text-black sticky md:fixed top-0 left-0  nav flex flex-col md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
     
-    <div className={`${isScrolled?"hidden":"visible"}  pb-1 transition-all flex gap-5 w-full mb-3 justify-center  mt-0 text-bgGrey3  border-b-bgGrey3 border-b-[0.5px]`} >
+    <div className={`${isScrolled?"hidden":"visible"}  pb-1 transition-all flex gap-5 w-full mb-3 justify-center  mt-0 text-black border-b-black border-b-[0.5px]`} >
         <p className={`  text-[12px] md:text-lg font-anton  `}>genesizmeppvtltd@gmail.com</p>
       
       <p className={` text-[12px] md:text-lg  font-anton text-right`}>+91-7736188669</p>
@@ -59,11 +59,11 @@ console.log(isScrolled);
         
       
       
-         <a className=' flex gap-3 items-center' href='/'><img className=' h-12 w-12' src='./assets/logo1.png'></img>
-         <div>
-         <h1 className='text-lg ss:text-2xl'>Genesiz MEP</h1> 
+         <a className=' flex gap-3 items-center w-max' href='/'><img className=' h-16 md:w-[260px] ' src='./assets/Genesizlogo.png'></img>
+         {/* <div>
+         <h1 className='text-lg ss:text-xl'>Genesiz MEP</h1> 
          <p className=' md:text-[10px] text-[6px]'>HVAC | ELECTRICAL | FIRE FIGHTING | PLUMBING</p>
-         </div>
+         </div> */}
          
          </a>
 
@@ -73,7 +73,7 @@ console.log(isScrolled);
         
        
         {
-          isAboveMediumScreen? (<div className='flex gap-7 items-center text-xl font cursor-pointer'>
+          isAboveMediumScreen? (<div className='flex gap-7 items-center justify-center my-auto text-xl font cursor-pointer'>
           
           <div><a href='/'>Home </a></div>
             <div className='group/item1'><a >Engineering <ChevronDown size={12}></ChevronDown></a>
