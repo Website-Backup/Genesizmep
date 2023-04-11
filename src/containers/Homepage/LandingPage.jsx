@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import ReactSwipe from 'react-swipe';
 import { ChevronRight,ChevronLeft } from '@styled-icons/material';
 
 
 const LandingPage = () => {
   let reactSwipeEl;
+  
+
+setInterval(handle,1000)
+
+  function handle(el){
+    el.next()
+    reactSwipeEl = el
+  }
   
   
   
@@ -14,8 +22,10 @@ const LandingPage = () => {
     <ReactSwipe
     className="carousel"
         swipeOptions={{ continuous: true }}
-        ref={el => (reactSwipeEl = el)}
+        ref={el => handle(el)}
+        
     >
+    
     <div className= '  box-border text-center md:min-h-screen h-full flex justify-center items-center mb-6 mainlanding flex-col py-12 gap-3  pt-30  md:mt-10'>
         <div className='text-2xl relative ss:text-4xl md:text-6xl my-7'><h1>THE MEP EXPERTS</h1></div>
         <div className='text-xl relative ss:text-2xl md:text-4xl text-textOrange mb-3'><h3>YOUR ONE-STOP FOR ALL MEP DESIGN NEEDS</h3></div>

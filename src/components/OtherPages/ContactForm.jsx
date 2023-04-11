@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import * as Yup from 'yup';
 
 const ContactForm = ({  handleSave, }) => {
-    const InputStyles = "bottom-1 rounded-md  ";
+    const InputStyles = "bottom-1 rounded-md py-2 px-1 ";
   const ContactSchema = Yup.object().shape({
     firstName: Yup.string()
       .min(2, 'Too Short!')
@@ -69,27 +69,31 @@ const ContactForm = ({  handleSave, }) => {
             className='   max-w-screen-ss justify-center flex flex-col py-5 rounded-2xl'
           >
         
-        <div className=" flex flex-col md:grid md:grid-cols-6 gap-x-3 gap-y-3 md:grid-rows-3">
+        <div className=" flex flex-col md:grid md:grid-cols-3 gap-x-3 gap-y-3 md:grid-rows-3">
 
        
              
-              <input
+        <div className=" relative">
+             <input
                 id='firstName'
                 type='text'
                 name='firstName'
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.firstName}
-                className="bottom-1 rounded-md  col-start-1 col-end-3 "
+                className={InputStyles}
                 placeholder='firstName*'
                
                   >
                   </input>
                   {errors.firstName && touched.firstName ? (
-             <label for="firstName" className=" text-white">{errors.firstName}</label>
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="firstName">{errors.firstName}</label>
            ) : null}
             
+             </div>
+            
              
+           <div className="relative">
              <input
                id='lastName'
                type='text'
@@ -97,31 +101,17 @@ const ContactForm = ({  handleSave, }) => {
                onChange={handleChange}
                onBlur={handleBlur}
                value={values.lastName}
-               className="bottom-1 rounded-md  col-start-3 col-end-5 "
+               className={InputStyles}
                placeholder='lastName*'
               
              />
-              {errors.lastName && touched.lastName ? (
-             <div className=" text-white">{errors.lastName}</div>
+             {errors.lastName && touched.lastName ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="lastName">{errors.lastName}</label>
            ) : null}
-        
+             </div>
              
-             <input
-               id='email'
-               type="email"
-               name='email'
-               onChange={handleChange}
-               onBlur={handleBlur}
-               value={values.email}
-               className="bottom-1 rounded-md  col-start-5 col-end-7 "
-               placeholder='email*'
-              
-             />
-             {errors.email && touched.email ? (
-             <div className=" text-white">{errors.email}</div>
-           ) : null}
-          
             
+             <div className="relative">
             <input
               id='phoneNumber'
               type='tel'
@@ -129,14 +119,16 @@ const ContactForm = ({  handleSave, }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.phoneNumber}
-              className="bottom-1 rounded-md  col-start-1 col-end-3 row-start-2 row-end-3 "
+              className={InputStyles}
               placeholder='phoneNumber*'
              
             />
-             {errors.phoneNumber && touched.phoneNumber ? (
-             <div className=" text-white">{errors.phoneNumber}</div>
+            {errors.phoneNumber && touched.phoneNumber ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="phoneNumber">{errors.phoneNumber}</label>
            ) : null}
-             
+            </div>
+
+            <div className="relative ">
              <input
                id='companyName'
                type='text'
@@ -144,14 +136,16 @@ const ContactForm = ({  handleSave, }) => {
                onChange={handleChange}
                onBlur={handleBlur}
                value={values.companyName}
-               className="bottom-1 rounded-md  col-start-3 col-end-5 row-start-2 row-end-3  "
+               className={`${InputStyles} w-full `}
                placeholder='companyName*'
               
              />
-            {errors.companyName && touched.companyName ? (
-             <div className=" text-white">{errors.companyName}</div>
+           {errors.companyName && touched.companyName ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="companyName">{errors.companyName}</label>
            ) : null}
+             </div>
             
+             <div className="relative">
             <input
               id='city'
               type="text"
@@ -159,14 +153,16 @@ const ContactForm = ({  handleSave, }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.city}
-              className="bottom-1 rounded-md  col-start-5 col-end-7  row-start-2 row-end-3"
+              className={InputStyles}
               placeholder='city*'
              
             />
-           {errors.city && touched.city ? (
-             <div className=" text-white">{errors.city}</div>
+         {errors.city && touched.city ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="city">{errors.city}</label>
            ) : null}
+            </div>
             
+            <div className=" relative">
             <input
               id='state'
               type='text'
@@ -174,28 +170,33 @@ const ContactForm = ({  handleSave, }) => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.state}
-              className="bottom-1 rounded-md col-start-1 col-end-4  row-start-3 row-end-4"
+              className={InputStyles}
               placeholder='state*'
              
             />
-          {errors.state && touched.state ? (
-             <div className=" text-white">{errors.state}</div>
+       {errors.state && touched.state ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="state">{errors.state}</label>
            ) : null}
+            </div>
+          
              
+            <div className=" col-start-1 col-end-4 relative">
              <textarea
                id='details'
                name='details'
                onChange={handleChange}
                onBlur={handleBlur}
                value={values.details}
-               className="bottom-1 rounded-md col-start-4 col-end-7  row-start-3 row-end-4"
+               className={`${InputStyles}  w-full`}
                placeholder='What can we help you with?'
                   maxLength={30}
                   
              />
-                {errors.details && touched.details ? (
-             <div className=" text-white">{errors.details}</div>
+             {errors.details && touched.details ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="details">{errors.details}</label>
            ) : null}
+             </div>
+
          </div>
               <button
                 className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-5 py-3 hover:scale-110 duration-200 rounded-xl max-w-max mt-3' 

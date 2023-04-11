@@ -617,16 +617,8 @@ video {
   grid-column-start: 2;
 }
 
-.col-start-3{
-  grid-column-start: 3;
-}
-
 .col-start-4{
   grid-column-start: 4;
-}
-
-.col-start-5{
-  grid-column-start: 5;
 }
 
 .col-end-2{
@@ -641,28 +633,8 @@ video {
   grid-column-end: 4;
 }
 
-.col-end-5{
-  grid-column-end: 5;
-}
-
 .col-end-7{
   grid-column-end: 7;
-}
-
-.row-start-2{
-  grid-row-start: 2;
-}
-
-.row-start-3{
-  grid-row-start: 3;
-}
-
-.row-end-3{
-  grid-row-end: 3;
-}
-
-.row-end-4{
-  grid-row-end: 4;
 }
 
 .mx-10{
@@ -756,16 +728,16 @@ video {
   margin-top: 0px;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
 
 .mt-auto{
   margin-top: auto;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .box-border{
@@ -1385,11 +1357,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-9{
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
 .pb-1{
   padding-bottom: 0.25rem;
 }
@@ -1404,6 +1371,14 @@ video {
 
 .pt-12{
   padding-top: 3rem;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-left{
@@ -1872,10 +1847,6 @@ p{
 
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:grid-rows-2{

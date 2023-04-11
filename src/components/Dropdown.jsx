@@ -18,7 +18,7 @@ const Dropdown = ({item}) => {
     <a href={item.url}>{item.name}</a>
     
     {
-      item.isdrop?<span className=' border-black border-dotted sticky z-40 border-[0.5px] p-1'>
+      item.isdrop?<span className=' border-black border-dotted sticky z-40 border-[0.5px] '>
       {!open?
     <Plus size={30} onClick={()=>setOpen(true)}></Plus>:<FileMinus size={30} onClick={()=>setOpen(false)}></FileMinus>}</span>:<></>
     }
