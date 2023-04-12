@@ -6,6 +6,9 @@ import { ChevronRight,ChevronLeft } from '@styled-icons/material';
 const LandingPage = () => {
   let reactSwipeEl;
   
+  setTimeout(()=>{
+
+  },2000)
   
   return (
     <div className=' relative md:h-screen '>
