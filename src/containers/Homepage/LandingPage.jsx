@@ -6,16 +6,6 @@ import { ChevronRight,ChevronLeft } from '@styled-icons/material';
 const LandingPage = () => {
   let reactSwipeEl;
   
-
-setInterval(handle,1000)
-
-  function handle(el){
-    el.next()
-    reactSwipeEl = el
-  }
-  
-  
-  
   
   return (
     <div className=' relative md:h-screen '>
