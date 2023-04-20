@@ -15,7 +15,7 @@ const LandingPage = () => {
     <ReactSwipe
     className="carousel"
         swipeOptions={{ continuous: true }}
-        ref={el => handle(el)}
+        ref={el => (reactSwipeEl = el)}
         
     >
     
