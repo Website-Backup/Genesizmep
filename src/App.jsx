@@ -35,7 +35,7 @@ const App = () => {
 },
 {
     name:"FIRE PROTECTION ENGINEERING SERVICES",
-    details:"Fire can cause significant damage in high-rise New York buildings in a short period of time. To help keep you and your building safe, our systems alert the fire department at the first sign of smoke.",
+    details:"Fire can cause significant damage in high-rise buildings in a short period of time. To help keep you and your building safe, our systems alert the fire department at the first sign of smoke.",
     className:"fire",
     img:"Fire.jpg",
     
