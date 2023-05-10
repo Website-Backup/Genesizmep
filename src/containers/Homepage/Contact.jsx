@@ -32,8 +32,8 @@ const Contact = ({ handleSave }) => {
     return (
     <div className="flex flex-col justify-center items-center px-5 py-4 mb-8">
       <div className='flex justify-between items-center mb-5'>
-        <h3 className=" text-xl ss:text-2xl font-jost font-bold" >
-        Prefer talking to our experts first? Fill this form to get a callback in 24 hours!
+        <h3 className=" text-xl text-center ss:text-xl font-jost font-bold" >
+        <p>Prefer talking to our experts first?</p> <p>Fill this form to get a callback in 24 hours!</p>
         </h3>
 
       </div>

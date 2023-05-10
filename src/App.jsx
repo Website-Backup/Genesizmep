@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Homepage from './pages/HomePage'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import OtherPages from './pages/OtherPages';
@@ -11,6 +11,7 @@ import Landing from './containers/projects/Landing';
 import { projectData } from './data';
 import "./App.css"
 import SocialIcon from './components/SocialIcon';
+import PopupLeadForm from '../src/components/OtherPages/PopupLeadForm'
 
 const App = () => {
   
@@ -42,45 +43,59 @@ const App = () => {
 }
 
 ]
-  
+
+
+const [Visible,changeVisible] = useState("NotVisible");
+
+const timer = setTimeout(()=>{changeVisible("Visible")},5000)
   
   return (
     <div>
-         <BrowserRouter>
-    <header>
-    <Navbar></Navbar>
-    </header>
+       <PopupLeadForm visible={Visible}></PopupLeadForm> 
+      <div>
+          <BrowserRouter>
+        <header>
+        <Navbar></Navbar>
+        </header>
 
-      <Routes>
-        <Route
-          path='/'
-          element={<Homepage></Homepage>}
-        ></Route>
-       
-        <Route
-          path='/hvac'
-          element={<OtherPages data={landingData[0]}></OtherPages>}
-        ></Route>
-        <Route path='/electrical' element={<OtherPages data={landingData[1]}></OtherPages>}></Route>
-        <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
-        <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
-        <Route path='/about' element={<AboutUs></AboutUs>}></Route>
-        <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
-        <Route path='/requestaproposal' element={<RequestPage></RequestPage>}></Route>
-        <Route path='/hotel' element={<Landing data={projectData[0]}></Landing>}></Route>
-        <Route path='/office' element={<Landing data={projectData[1]}></Landing>}></Route>
-        <Route path='/education' element={<Landing data={projectData[2]}></Landing>}></Route>
-        <Route path='/airport' element={<Landing data={projectData[3]}></Landing>}></Route>
-        <Route path='/mall-stadium'element={<Landing data={projectData[4]}></Landing>}></Route>
-        <Route path='/healthcare' element={<Landing data={projectData[5]}></Landing>}></Route>
 
-      </Routes>
-      <SocialIcon></SocialIcon>
-      <footer>
-      <Footer></Footer>
-      </footer>
 
-      </BrowserRouter>
+          <Routes>
+            <Route
+              path='/'
+              element={<Homepage></Homepage>}
+            ></Route>
+          
+            <Route
+              path='/hvac'
+              element={<OtherPages data={landingData[0]}></OtherPages>}
+            ></Route>
+            <Route path='/electrical' element={<OtherPages data={landingData[1]}></OtherPages>}></Route>
+            <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
+            <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
+            <Route path='/about' element={<AboutUs></AboutUs>}></Route>
+            <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
+            <Route path='/requestaproposal' element={<RequestPage></RequestPage>}></Route>
+            <Route path='/hotel' element={<Landing data={projectData[0]}></Landing>}></Route>
+            <Route path='/office' element={<Landing data={projectData[1]}></Landing>}></Route>
+            <Route path='/education' element={<Landing data={projectData[2]}></Landing>}></Route>
+            <Route path='/airport' element={<Landing data={projectData[3]}></Landing>}></Route>
+            <Route path='/mall-stadium'element={<Landing data={projectData[4]}></Landing>}></Route>
+            <Route path='/healthcare' element={<Landing data={projectData[5]}></Landing>}></Route>
+
+          </Routes>
+
+          <SocialIcon></SocialIcon>
+          <footer>
+          <Footer></Footer>
+          </footer>
+
+          </BrowserRouter>
+
+      </div>
+
+
+
     </div>
   )
 }

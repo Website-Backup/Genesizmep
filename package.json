@@ -15,6 +15,7 @@
     "@styled-icons/bootstrap": "^10.47.0",
     "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/material": "^10.47.0",
+    "@styled-icons/evaicons-solid/": "^10.46.0",
     "firebase": "^9.19.1",
     "formik": "^2.2.9",
     "framer-motion": "^10.10.0",
@@ -25,6 +26,8 @@
     "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0",
     "react-swipe": "^6.0.4",
+    "styled-components": "^5.3.10",
+    "styled-icons": "^10.47.0",
     "swipe-js-iso": "^2.1.5",
     "yup": "^1.0.2"
   },

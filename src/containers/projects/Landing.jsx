@@ -3,9 +3,13 @@ import ProjectCard from '../../components/Projects/ProjectCard'
 
 
 const Landing = ({data}) => {
+
+
     
   
     return (
+
+
     <div className=' md:mt-30 ' >
         <div className=' relative projectLanding min-h-screen justify-center flex items-center'>
         <h1 className=' text-5xl uppercase font-bold'>{data.title}</h1>
@@ -21,6 +25,7 @@ const Landing = ({data}) => {
 
 
     </div>
+
   )
 }
 

@@ -12,9 +12,14 @@ import Navbar from '../components/Navbar';
 const OtherPages = ({data}) => {
   
   
+
+
     return (
     <div>
-    
+
+
+
+
         <LandingPage props={data} ></LandingPage>
         <SecPage></SecPage>
         <ThirdPage></ThirdPage>
