@@ -45,9 +45,9 @@ const App = () => {
 ]
 
 
-const [Visible,changeVisible] = useState("NotVisible");
+const [Visible,changeVisible] = useState("notvisible");
 
-const timer = setTimeout(()=>{changeVisible("Visible")},5000)
+const timer = setTimeout(()=>{changeVisible("visible")},5000)
 
 
 
