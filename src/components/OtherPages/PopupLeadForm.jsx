@@ -30,7 +30,7 @@ const PopupLeadForm = ({visible}) => {
 
       <div className="relative">
         <div>
-          <img src="../../../../public/assets/pop-character.webp"></img>
+          <img src="./assets/pop-character.webp"></img>
         </div>
 
       </div>
