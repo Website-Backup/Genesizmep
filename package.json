@@ -15,7 +15,6 @@
     "@styled-icons/bootstrap": "^10.47.0",
     "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/material": "^10.47.0",
-    "@styled-icons/evaicons-solid/": "^10.46.0",
     "firebase": "^9.19.1",
     "formik": "^2.2.9",
     "framer-motion": "^10.10.0",

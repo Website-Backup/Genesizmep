@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Contact from '../../containers/Homepage/Contact'
-import { CloseSquare } from 'styled-icons/evaicons-solid';
-import { Opacity } from '@styled-icons/material';
+import { Close } from '@styled-icons/material';
 
 
 const PopupLeadForm = ({visible}) => {
@@ -40,7 +39,7 @@ const PopupLeadForm = ({visible}) => {
 
     </div>
     <div className="absolute top-0 right-0 bg-white">
-          <button onClick={()=>setShowMyForm(false)}><CloseSquare size={30}></CloseSquare></button>
+          <button onClick={()=>setShowMyForm(false)}><Close size={30}></Close></button>
     </div> 
 
     </div>
