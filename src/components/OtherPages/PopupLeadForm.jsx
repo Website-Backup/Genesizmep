@@ -21,11 +21,11 @@ const PopupLeadForm = ({visible}) => {
       <div className="flex justify-center items-center" style={{backgroundColor: 'orange', borderRadius: "20px", padding: "7px"}}>
       <div className="flex-col gap-4">
         <div>
-          <h3 className="text-4xl text-center sm:text-xs"> Prefer talking to our experts first? </h3>
+          <h3 className="text-4xl text-center text-bold"> Prefer talking to our experts first? </h3>
           <h1 className='text-center'>Let us know what you need - we're happy to help!</h1>
         </div>
         <div className="flex justify-center items-center" style={{backgroundColor: 'orange'}}>
-          <button onClick={()=>setShowMyForm(false)} className="bg-black text-white text-2xl px-4 py-2  font-semibold rounded-2xl  hover:bg-textOrange hover:scale-110 transition-all duration-300"><a href='/contact'>REQUEST A CALLBACK</a></button>
+          <button onClick={()=>setShowMyForm(false)} className="bg-black text-white lg:text-2xl px-4 py-2  font-semibold rounded-2xl  hover:bg-textOrange hover:scale-110 transition-all duration-300"><a href='/contact'>REQUEST A CALLBACK</a></button>
         </div>
       </div>
 
