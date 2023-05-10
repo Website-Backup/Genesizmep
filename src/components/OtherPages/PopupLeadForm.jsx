@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Contact from '../../containers/Homepage/Contact'
 import { Close } from '@styled-icons/material';
 
 
@@ -28,12 +27,12 @@ const PopupLeadForm = ({visible}) => {
         </div>
       </div>
 
-      <div className="relative">
+
         <div>
           <img src="./assets/pop-character.webp"></img>
         </div>
 
-      </div>
+
 
      
 
@@ -46,12 +45,6 @@ const PopupLeadForm = ({visible}) => {
 
       
           
-      {/* <div className="relative">
-          <div className="absolute top-0 right-0">
-            <button onClick={()=>setShowMyForm(false)}><CloseCircleOutline size={35}></CloseCircleOutline></button>
-          </div>
-      </div>
-      <Contact> </Contact> */}
 
     </div>
 </div>

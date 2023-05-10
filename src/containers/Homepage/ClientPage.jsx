@@ -23,7 +23,7 @@ const ClientPage = () => {
     </h2></div>
     
 
-    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5'>Get your quote</button></a></div>
+    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5 hover:bg-textOrange hover:scale-110 transition-all duration-300'>Get your quote</button></a></div>
     </motion.div>
     
 
