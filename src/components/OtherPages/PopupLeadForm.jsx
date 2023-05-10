@@ -7,7 +7,7 @@ const PopupLeadForm = ({visible}) => {
 
   const [showMyForm, setShowMyForm] = useState(true);
 
-  if (visible=="Visible"){
+  if (visible==="Visible" && window.location.pathname!="/contact"){
   if (showMyForm){
   
   return (

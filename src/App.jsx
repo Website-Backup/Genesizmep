@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Homepage from './pages/HomePage'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import OtherPages from './pages/OtherPages';
 import AboutUs from './pages/AboutUs';
 import Navbar from './components/Navbar';
@@ -48,7 +48,9 @@ const App = () => {
 const [Visible,changeVisible] = useState("NotVisible");
 
 const timer = setTimeout(()=>{changeVisible("Visible")},5000)
-  
+
+
+
   return (
     <div>
        <PopupLeadForm visible={Visible}></PopupLeadForm> 
@@ -57,7 +59,6 @@ const timer = setTimeout(()=>{changeVisible("Visible")},5000)
         <header>
         <Navbar></Navbar>
         </header>
-
 
 
           <Routes>
