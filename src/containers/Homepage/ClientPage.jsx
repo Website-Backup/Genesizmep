@@ -5,21 +5,21 @@ const griditems = ["grid1","grid2","grid8","grid4","grid3","grid6","grid7","grid
 
 const ClientPage = () => {
   return (
-    <motion.div className='flex flex-col md:grid md:grid-cols-3 gap-x-3 mx-8 '
-    initial="hidden"
-        whileInView="visible"
-        viewport={{once:true,amount:0.5}}
-        transition = {{duration:0.6}}
-        variants={{
-          hidden:{opacity:0,y:-50},
-          visible:{opacity:1,y:0}
-          }}
+    <motion.div className='flex flex-col md:grid md:grid-cols-3 gap-3 mx-8 '
+    // initial="hidden"
+    //     whileInView="visible"
+    //     viewport={{once:true,amount:0.5}}
+    //     transition = {{duration:0.6}}
+    //     variants={{
+    //       hidden:{opacity:0,y:-50},
+    //       visible:{opacity:1,y:0}
+    //       }}
     >
     <motion.div className='flex flex-col justify-center md:text-left text-center'
     
     
     >
-    <div className=' text-2xl ss:text-3xl md:text-5xl mb-7 uppercase  ' ><h2>WHY Genesiz mep
+    <div className=' text-2xl ss:text-3xl md:text-5xl mb-7 uppercase' ><h2>WHY Genesiz mep?
     </h2></div>
     
 

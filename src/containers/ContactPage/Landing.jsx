@@ -13,12 +13,11 @@ const Landing = () => {
   }
 
   return (
-       <div className='flex flex-col items-center md:grid md:grid-cols-2 md:my-16 md:py-[110px]' style={{backgroundColor: "#cccccc"}}>
+       <div className='flex flex-col items-center md:grid md:grid-cols-2 md:my-16 md:py-[110px] ' style={{backgroundColor: "#dcdcdc"}}>
         <div>
             <div className='flex flex-col py-4 px-2 border-b-black text-center '>
-                <h1 className=' font-anton text-5xl  mb-4 w-full'>Request a Callback</h1>
-                <p className=' font-jost text-2xl border-b-black'>Intrested in getting your MEP Design and Permit for your Project? Then kindly fill the form, our team will contact you within 24 hours!</p>
-
+                <h1 className=' font-anton text-5xl  mb-4 '>Request a Callback</h1>
+                <p className=' font-jost text-2xl border-b-black '>Intrested in getting your MEP Design and Permit for your Project? Then kindly fill the form, our team will contact you within 24 hours!</p>
             </div>  
 
 
@@ -29,7 +28,7 @@ const Landing = () => {
 <div>
 
 
-<RequestCallbackForm handleSave={addData}></RequestCallbackForm>
+<RequestCallbackForm handleSave={addData}></RequestCallbackForm> 
 
 {/* <Contact handleSave={addData} > </Contact> */}
 

@@ -11,7 +11,7 @@ const AboutUs = () => {
     </div>
   
    
-    </motion.div>
+     </motion.div> 
   )
 }
 
