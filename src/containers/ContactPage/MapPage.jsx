@@ -22,7 +22,7 @@ const data=[{
 
 const MapPage = () => {
   return (
-    <div className='grid md:grid-cols-3 justify-center gap-x-5 px-5' >
+    <div className='grid md:grid-cols-3 justify-center gap-5 px-5' >
         {
             data.map((i)=><AddressCard data={i}></AddressCard>)
         }

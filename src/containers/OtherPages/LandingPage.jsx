@@ -8,11 +8,12 @@ const LandingPage = ({props}) => {
   backgroundRepeat: 'no-repeat',
  
   backgroundPosition: 'center',
-
+  backgroundColor: 'rgb(0, 0, 0, 0.25)',
+ 
 }
 
   return (
-    <div style={styles} className={`flex  flex-col max-h-max items-stretch py-40 px-10 md:pt-64 `}  >
+    <div style={styles} className={`flex  flex-col max-h-max items-stretch py-40 px-10 md:pt-64 `}>
         
         <div className=' flex flex-col gap-3 text-left opacity-100 z-10 textShadow text-bgGrey3 '>
             <h6 className=' text-2xl uppercase font-jost font-bold'>GENESIZ MEP CONSULTANT </h6>

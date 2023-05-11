@@ -1,5 +1,5 @@
 import React from 'react'
-import background1 from "../../public/assets/homePage/OurServices/HVAC.jpg"
+import background1 from "../../public/assets/homePage/OurServices/HVAC.webp"
 
 const OurServiceCard = ({data}) => {
     const background = `./assets/homePage/OurServices/${data.img}`;

@@ -3,23 +3,23 @@ import OurServiceCard from "../../components/OurServiceCard";
 const OurService = ()=>{
     const Service = [{
         name:"HVAC",
-        img: "HVAC.jpg",
+        img: "HVAC.webp",
         background:"hvac",
         url:"/hvac"
     },
     {
         name:"FireProtection",
-        img: "Fire.jpg",
+        img: "Fire.webp",
         background:"fire",
         url:"/fireprotection"
     },{
         name:"Electrical",
-        img: "Electrical.jpg",
+        img: "Electrical.webp",
         background:"elec",
         url:"/electrical",
     },{
         name:"Plumbing",
-        img: "Plumbing.jpg",
+        img: "Plumbing.webp",
         background:"plum",
         url:"/plumbing",
     }

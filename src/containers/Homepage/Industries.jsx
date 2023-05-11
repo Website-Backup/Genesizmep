@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from "../../components/IndustriesCard"
 
-const details = [{name:"hotel",img:"hotel.jpg", link:"/hotel"},{name:"HEALTHCARE",img:"Hospital.jpg",link:"/healthcare"},{name:"airport",img:"airport.jpg",link:"/airport"},{name:"malls and stadium",img:"mall.jpg",link:"/mall-stadium"},{name:"office",img:"office.jpg",link:"/office"},{name:"education",img:"education.jpg",link:"/education"}]
+const details = [{name:"hotel",img:"hotel.webp", link:"/hotel"},{name:"HEALTHCARE",img:"Hospital.webp",link:"/healthcare"},{name:"airport",img:"airport.webp",link:"/airport"},{name:"malls and stadium",img:"mall.webp",link:"/mall-stadium"},{name:"office",img:"office.webp",link:"/office"},{name:"education",img:"education.webp",link:"/education"}]
 
 const Industries = () => {
   return (

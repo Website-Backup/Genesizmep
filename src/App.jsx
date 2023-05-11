@@ -18,7 +18,7 @@ const App = () => {
   const landingData = [{name:"MECHANICAL - HVAC ENGINEERING SERVICES",
   details:"Genesiz creates custom HVAC system solutions that are tailored to your specific requirements, maximising energy efficiency and lowering construction costs.",
   className:"hvac",
-  img:"HVAC.jpg",
+  img:"HVAC.webp",
 
 },
   
@@ -26,19 +26,19 @@ const App = () => {
     name:"ELECTRICAL ENGINEERING SERVICES",
     details:"Buildings today contain more electrical components than ever before. We have your solution for low to high voltage building systems, as well as normal and emergency power.",
     className:"electrical",
-    img:"Electrical.jpg",
+    img:"Electrical.webp",
 },
 {
     name:"PLUMBING ENGINEERING & DESIGN SERVICES",
     details:"Our specialty plumbing solutions are intended to be efficient, functional, and long-lasting.",
     className:"plumbing",
-    img:"Plumbing.jpg",
+    img:"Plumbing.webp",
 },
 {
     name:"FIRE PROTECTION ENGINEERING SERVICES",
     details:"Fire can cause significant damage in high-rise buildings in a short period of time. To help keep you and your building safe, our systems alert the fire department at the first sign of smoke.",
     className:"fire",
-    img:"Fire.jpg",
+    img:"Fire.webp",
     
 }
 
@@ -47,7 +47,7 @@ const App = () => {
 
 const [Visible,changeVisible] = useState("NotVisible");
 
-const timer = setTimeout(()=>{changeVisible("Visible")},5000)
+const timer = setTimeout(()=>{changeVisible("Visible")},10000)
 
 
 
@@ -96,7 +96,7 @@ const timer = setTimeout(()=>{changeVisible("Visible")},5000)
       </div>
 
 
-
+ 
     </div>
   )
 }

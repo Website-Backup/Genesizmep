@@ -5,16 +5,17 @@ import ThirdPage from '../containers/ContactPage/ThirdPage';
 import FourthPage from '../containers/ContactPage/FourthPage';
 import MapPage from '../containers/ContactPage/MapPage';
 import FifthPage from '../containers/ContactPage/FifthPage';
+import Working from '../containers/Homepage/Working'
 
 
 const ContactPage = () => {
   return (
     <div>
       <Landing></Landing>
-      <MapPage></MapPage>
-    <SecondPage></SecondPage>
-    <ThirdPage></ThirdPage>
-<FourthPage></FourthPage>
+      <SecondPage></SecondPage>
+      <Working></Working>
+      <ThirdPage></ThirdPage>
+    <FourthPage></FourthPage>
 
 
 {/* <FifthPage></FifthPage> */}

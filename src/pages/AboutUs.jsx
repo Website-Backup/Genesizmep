@@ -17,7 +17,7 @@ const AboutUs = () => {
         <Member></Member>
     </div>
   )
-}
+} 
 
 
 export default AboutUs

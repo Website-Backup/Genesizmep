@@ -213,7 +213,7 @@ const Contact = ({ handleSave }) => {
                value={values.details}
                className={`${InputStyles}  w-full`}
                placeholder='What can we help you with?'
-                  maxLength={30}
+                  maxLength={100}
                   
              />
              {errors.details && touched.details ? (

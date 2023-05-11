@@ -4,7 +4,7 @@
 
 .mainlanding::before {    
     content: "";
-    background-image: url("../public/assets/homePage/img1.png");
+    background-image: url("../public/assets/homePage/img1.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -17,7 +17,7 @@
 
 .mainlanding1::before {    
     content: "";
-    background-image: url("../public/assets/homePage/frame2.png");
+    background-image: url("../public/assets/homePage/frame2.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -29,7 +29,7 @@
 }
 .mainlanding2::before {    
     content: "";
-    background-image: url("../public/assets/homePage/frame3.png");
+    background-image: url("../public/assets/homePage/frame3.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -41,21 +41,21 @@
 }
 .projectLanding::before {    
     content: "";
-    background-image: url("../public/assets/ourprojects.jpg");
+    background-image: url("../public/assets/ourprojects.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.4;
+    opacity: 0.3;
     
    
 }
 
 .hvac::before{
     content: "";
-    background-image: url("../public/assets/homePage/OurServices/HVAC.jpg");
+    background-image: url("../public/assets/homePage/OurServices/HVAC.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -68,7 +68,7 @@
 
 .electrical::before{
     content: "";
-    background-image: url("../public/assets/homePage/OurServices/Electrical.jpg");
+    background-image: url("../public/assets/homePage/OurServices/Electrical.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -80,7 +80,7 @@
 
 .fire::before{
     content: "";
-    background-image: url("../public/assets/homePage/OurServices/Fire.jpg");
+    background-image: url("../public/assets/homePage/OurServices/Fire.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -92,7 +92,7 @@
 
 .plumbing::before{
     content: "";
-    background-image: url("../public/assets/homePage/OurServices/Plumbing.jpg");
+    background-image: url("../public/assets/homePage/OurServices/Plumbing.webp");
     background-size: cover;
     position: absolute;
     top: 0px;
