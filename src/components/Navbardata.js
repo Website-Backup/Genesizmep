@@ -32,7 +32,6 @@ const data = [
     {
         name:"Projects",
         isdrop:true,
-        url:"/projects",
         data:[{
             name:"Hotel",
             isdrop:false,

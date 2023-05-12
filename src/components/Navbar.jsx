@@ -86,7 +86,7 @@ console.log(isScrolled);
         </div>
             </div>
             
-            <div className='group/item1'><a >Projects <ChevronDown size={12}></ChevronDown></a>
+            <div className='group/item1'><a>Projects <ChevronDown size={12}></ChevronDown></a>
             <div className=' border-t-solid  border-t-textOrange border-t-8 group-hover/item1:scale-100 rounded-xl scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
