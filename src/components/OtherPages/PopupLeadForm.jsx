@@ -6,6 +6,15 @@ const PopupLeadForm = ({visible}) => {
 
 
   const [isBlinking, setIsBlinking] = useState(false);
+  const [showMyForm, setShowMyForm] = useState(true);
+
+  useEffect(()=>{
+
+ return()=>{
+  setInterval(()=>{
+      setShowMyForm(true);
+  },75000)};
+  },[]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,7 +27,7 @@ const PopupLeadForm = ({visible}) => {
   }, []);
 
 
-  const [showMyForm, setShowMyForm] = useState(true);
+
 
 
 

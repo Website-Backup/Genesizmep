@@ -16,7 +16,7 @@ import Member from '../containers/AboutUs/Member';
 const OtherPages = ({data}) => {
   
   const [Visible,changeVisible] = useState("NotVisible");
-  const timer = setTimeout(()=>{changeVisible("Visible")},20000) 
+  const timer = setTimeout(()=>{changeVisible("Visible")},35000) 
 
     return (
     <div>

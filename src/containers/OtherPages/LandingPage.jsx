@@ -34,8 +34,8 @@ useEffect(() => {
             </h1>
             <h6 className=' text-2xl font-thin font-jost'>{props.details}</h6>
             <h4 className=' text-3xl font-jost font-semibold'>YOUR ONE STOP SHOP FOR ALL MEP NEEDS!</h4>
-            <div className='relative'><a href='/contact'><button className={`hover:bg-textOrange hover:text-white hover:scale-110 transition-all duration-300 font-semibold shadow-2xl shadow-footerBlack font-jost text-xl px-10 py-3 rounded-2xl ${isBlinking ? 'bg-black text-white':' bg-textOrange text-white' }`}>
-        Inquiry
+            <div className='relative'><a href='/contact'><button className={`hover:bg-textOrange hover:text-white hover:scale-110 transition-all duration-300 font-semibold shadow-2xl shadow-footerBlack font-jost text-xl px-10 py-3 rounded-2xl ${isBlinking ? 'bg-white text-black' : ' bg-textOrange text-white'}`}>
+        Enquiry
         </button></a></div>
         
         </div>

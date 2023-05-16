@@ -57,9 +57,9 @@ const BrochureForm = ({ handleSave }) => {
             className=' shadow-xl  max-w-screen-ss justify-center flex border-solid border-[2px] flex-col py-5 rounded-2xl'
             style={{backgroundColor: "white"}}
           >
-        <div className="flex flex-col gap-8  px-3 md:px-10 py-2 md:py-3  ">
+        <div className="flex flex-col gap-8 justify-center items-center px-3 md:px-10 py-2 md:py-3  ">
 
-       
+            <p className="font-bold text-lg text-center">Kindly fill the form to download our brochure</p>
              <div className="relative text-left">
                 <p>Name:</p>
              <input

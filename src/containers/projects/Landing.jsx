@@ -8,7 +8,7 @@ import PopupLeadForm from '../../components/OtherPages/PopupLeadForm'
 const Landing = ({data}) => {
 
     const [Visible,changeVisible] = useState("NotVisible");
-    const timer = setTimeout(()=>{changeVisible("Visible")},10000) 
+    const timer = setTimeout(()=>{changeVisible("Visible")},20000) 
       
   
     return (

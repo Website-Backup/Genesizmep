@@ -22,8 +22,9 @@ const Homepage = () => {
         await firebase.addDocument(userdata);
   }
 
+
   const [Visible,changeVisible] = useState("NotVisible");
-  const timer = setTimeout(()=>{changeVisible("Visible")},20000)
+  const timer = setTimeout(()=>{changeVisible("Visible")},35000);
 
   return (
     <div>
