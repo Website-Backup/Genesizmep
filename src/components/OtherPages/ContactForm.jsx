@@ -2,14 +2,10 @@ import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
 
-const ContactForm = ({  handleSave, }) => {
+const ContactForm = ({ handleSave }) => {
     const InputStyles = "bottom-1 rounded-md py-2 px-1 ";
   const ContactSchema = Yup.object().shape({
     firstName: Yup.string()
-      .min(2, 'Too Short!')
-      .max(50, 'Too Long!')
-      .required('Required'),
-    lastName: Yup.string()
       .min(2, 'Too Short!')
       .max(50, 'Too Long!')
       .required('Required'),
@@ -35,7 +31,6 @@ const ContactForm = ({  handleSave, }) => {
       <Formik
         initialValues={{
           firstName: '',
-          lastName: '',
           email: '',
           phoneNumber: '',
           companyName: '',
@@ -82,7 +77,7 @@ const ContactForm = ({  handleSave, }) => {
                 onBlur={handleBlur}
                 value={values.firstName}
                 className={InputStyles}
-                placeholder='firstName*'
+                placeholder='Name*'
                
                   >
                   </input>
@@ -91,27 +86,27 @@ const ContactForm = ({  handleSave, }) => {
            ) : null}
             
              </div>
-            
+              
              
-           <div className="relative">
+        
+             <div className="relative">
              <input
-               id='lastName'
-               type='text'
-               name='lastName'
+               id='email'
+               type="email"
+               name='email'
                onChange={handleChange}
                onBlur={handleBlur}
-               value={values.lastName}
+               value={values.email}
                className={InputStyles}
-               placeholder='lastName*'
+               placeholder='email*'
               
              />
-             {errors.lastName && touched.lastName ? (
-             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="lastName">{errors.lastName}</label>
+            {errors.email && touched.email ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="email">{errors.email}</label>
            ) : null}
              </div>
              
-            
-             <div className="relative">
+            <div className="relative">
             <input
               id='phoneNumber'
               type='tel'
@@ -128,7 +123,11 @@ const ContactForm = ({  handleSave, }) => {
            ) : null}
             </div>
 
-            <div className="relative ">
+
+           
+             
+             
+             <div className="relative">
              <input
                id='companyName'
                type='text'
@@ -145,7 +144,7 @@ const ContactForm = ({  handleSave, }) => {
            ) : null}
              </div>
             
-             <div className="relative">
+            <div className="relative">
             <input
               id='city'
               type="text"
@@ -179,8 +178,7 @@ const ContactForm = ({  handleSave, }) => {
            ) : null}
             </div>
           
-             
-            <div className=" col-start-1 col-end-4 relative">
+             <div className=" col-start-1 col-end-4 relative">
              <textarea
                id='details'
                name='details'
@@ -189,17 +187,22 @@ const ContactForm = ({  handleSave, }) => {
                value={values.details}
                className={`${InputStyles}  w-full`}
                placeholder='What can we help you with?'
-                  maxLength={30}
+                  maxLength={100}
                   
              />
              {errors.details && touched.details ? (
              <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="details">{errors.details}</label>
            ) : null}
              </div>
-
+            
+         
+         
+         
+         
          </div>
+
               <button
-                className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-5 py-3 hover:scale-110 duration-200 rounded-xl max-w-max mt-3' 
+                className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-5 py-3 hover:scale-110 duration-200 rounded-xl max-w-max' 
                 type='submit'
                 disabled={isSubmitting}
               >

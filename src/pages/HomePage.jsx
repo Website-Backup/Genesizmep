@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LandingPage from '../containers/Homepage/LandingPage'
 import AboutUs from '../containers/Homepage/AboutUs'
 import ClientPage from '../containers/Homepage/ClientPage'
@@ -10,6 +10,7 @@ import Contact from '../containers/Homepage/Contact'
 import Footer from '../containers/Homepage/Footer'
 import OurService from '../containers/Homepage/OurService'
 import { useFirebase } from '../context/Firebase'
+import PopupLeadForm from '../components/OtherPages/PopupLeadForm'
 
 
 
@@ -21,26 +22,27 @@ const Homepage = () => {
         await firebase.addDocument(userdata);
   }
 
-
-
+  const [Visible,changeVisible] = useState("NotVisible");
+  const timer = setTimeout(()=>{changeVisible("Visible")},20000)
 
   return (
     <div>
-
-
-      <LandingPage></LandingPage>
-      <AboutUs></AboutUs>
-      <ClientPage></ClientPage>
-      <OurService></OurService>
-      <Industries></Industries>
-      <Working></Working>
-      <OnDemandEng></OnDemandEng>
-      <Contact handleSave={addData} ></Contact>
-      
-    
-    
-      
+      <PopupLeadForm visible={Visible}></PopupLeadForm>
+      <div>
+        <Navbar></Navbar>
+        <LandingPage></LandingPage>
+        <AboutUs></AboutUs>
+        <ClientPage></ClientPage>
+        <OurService></OurService>
+        <Industries></Industries>
+        <Working></Working>
+        <OnDemandEng></OnDemandEng>
+        <Contact handleSave={addData} ></Contact>
+        <Footer></Footer>
+        
+        </div>
     </div>
+      
   )
 }
 

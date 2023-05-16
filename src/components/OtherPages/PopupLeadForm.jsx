@@ -1,18 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Close } from '@styled-icons/material';
 
 
 const PopupLeadForm = ({visible}) => {
 
 
+  const [isBlinking, setIsBlinking] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsBlinking((prevIsBlinking) => !prevIsBlinking);
+    }, 500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
   const [showMyForm, setShowMyForm] = useState(true);
+
+
 
   if (visible==="Visible" && window.location.pathname!="/contact"){
   if (showMyForm){
   
   return (
 
-  <div className="fixed top-0 left-0 flex w-full h-full justify-center items-center bg-black bg-opacity-25" style={{zIndex: '3000',backgroundColor: 'rgb(0, 0, 0, 0.25)'}}>
+  <div className="fixed top-0 left-0 flex w-full h-full justify-center items-center bg-black bg-opacity-25" style={{zIndex: '3000',backgroundColor: 'rgb(0, 0, 0, 0.7)'}}>
     <div className="relative"> 
     <div className="flex flex-wrap justify-evenly m-2 items-evenly p-2 shadow-2xl rounded-3xl bg-white">
 
@@ -23,7 +38,7 @@ const PopupLeadForm = ({visible}) => {
           <h1 className='text-center'>Let us know what you need - we're happy to help!</h1>
         </div>
         <div className="flex justify-center items-center" style={{backgroundColor: 'orange'}}>
-          <button onClick={()=>setShowMyForm(false)} className="bg-black text-white lg:text-2xl px-4 py-2  font-semibold rounded-2xl  hover:bg-textOrange hover:scale-110 transition-all duration-300"><a href='/contact'>REQUEST A CALLBACK</a></button>
+          <a href='/contact'><button onClick={()=>setShowMyForm(false)} className={`hover:bg-textOrange hover:text-white hover:scale-110 transition-all duration-300 font-semibold shadow-2xl shadow-footerBlack ${isBlinking ? 'bg-black text-white font-jost text-xl px-3 py-2 rounded-2xl':' bg-textOrange text-white font-jost text-xl px-3 py-2 rounded-2xl' }`}>REQUEST A CALLBACK</button></a>
         </div>
       </div>
 

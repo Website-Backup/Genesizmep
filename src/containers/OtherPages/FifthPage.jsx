@@ -4,11 +4,11 @@ import Card from '../../components/OtherPages/Card'
 const FifthPage = () => {
   const data = [
   {num:"29",title:"States",content:"We work all over India"},
-  {num:"0",title:"Errors",content:"Assess the load of the equipment accurately"},
+  {num:"20+",title:"Years",content:"We are most experienced"},
   {num:"300+",title:"Projects",content:"We have completed so far!"},
-  {num:"100+",title:"Brands",content:"We work with the biggest names in the Franchise industry"},
+  {num:"100+",title:"Brands",content:"We worked with the biggest names"},
+  {num:"0",title:"Errors",content:"Assess the load of the equipment accurately"},
   {num:"5",title:"Days",content:"Enjoy our lightening fast turnaround"},
-  {num:"",title:"Cost Eff",content:"Very budget friendly & cost effective"},
 
 ]
   

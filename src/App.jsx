@@ -45,59 +45,38 @@ const App = () => {
 ]
 
 
-const [Visible,changeVisible] = useState("NotVisible");
 
-const timer = setTimeout(()=>{changeVisible("Visible")},10000)
 
 
 
   return (
-    <div>
-       <PopupLeadForm visible={Visible}></PopupLeadForm> 
-      <div>
+  
           <BrowserRouter>
-        <header>
-        <Navbar></Navbar>
-        </header>
-
-
-          <Routes>
-            <Route
-              path='/'
-              element={<Homepage></Homepage>}
-            ></Route>
-          
-            <Route
-              path='/hvac'
-              element={<OtherPages data={landingData[0]}></OtherPages>}
-            ></Route>
-            <Route path='/electrical' element={<OtherPages data={landingData[1]}></OtherPages>}></Route>
-            <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
-            <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
-            <Route path='/about' element={<AboutUs></AboutUs>}></Route>
-            <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
-            <Route path='/requestaproposal' element={<RequestPage></RequestPage>}></Route>
-            <Route path='/hotel' element={<Landing data={projectData[0]}></Landing>}></Route>
-            <Route path='/office' element={<Landing data={projectData[1]}></Landing>}></Route>
-            <Route path='/education' element={<Landing data={projectData[2]}></Landing>}></Route>
-            <Route path='/airport' element={<Landing data={projectData[3]}></Landing>}></Route>
-            <Route path='/mall-stadium'element={<Landing data={projectData[4]}></Landing>}></Route>
-            <Route path='/healthcare' element={<Landing data={projectData[5]}></Landing>}></Route>
-
-          </Routes>
-
-          <SocialIcon></SocialIcon>
-          <footer>
-          <Footer></Footer>
-          </footer>
-
+            <Routes>
+              <Route
+                path='/'
+                element={<Homepage></Homepage>}
+              ></Route>
+              <Route
+                path='/hvac'
+                element={<OtherPages data={landingData[0]}></OtherPages>}
+              ></Route>
+              <Route path='/electrical' element={<OtherPages data={landingData[1]}></OtherPages>}></Route>
+              <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
+              <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
+              <Route path='/about' element={<AboutUs></AboutUs>}></Route>
+              <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
+              <Route path='/requestaproposal' element={<RequestPage></RequestPage>}></Route>
+              <Route path='/hotel' element={<Landing data={projectData[0]}></Landing>}></Route>
+              <Route path='/office' element={<Landing data={projectData[1]}></Landing>}></Route>
+              <Route path='/education' element={<Landing data={projectData[2]}></Landing>}></Route>
+              <Route path='/airport' element={<Landing data={projectData[3]}></Landing>}></Route>
+              <Route path='/mall-stadium'element={<Landing data={projectData[4]}></Landing>}></Route>
+              <Route path='/healthcare' element={<Landing data={projectData[5]}></Landing>}></Route>
+            </Routes>
+            <SocialIcon></SocialIcon>
           </BrowserRouter>
-
-      </div>
-
-
- 
-    </div>
+          
   )
 }
 

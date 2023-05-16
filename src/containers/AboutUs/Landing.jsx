@@ -12,7 +12,7 @@ const myStyle={
 
 const Landing = () => {
   return (
-    <div className='bg-fixed flex items-end  px-10 bg-stone-600 min-h-[40vw]' style={myStyle} >
+    <div className='bg-fixed flex items-end  px-5 md:px-10 bg-stone-600 min-h-[40vw]' style={myStyle} >
        
     <div className=' flex flex-col-reverse md:flex-row gap-10  mt-auto'>
       <LandingCard></LandingCard>

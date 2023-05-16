@@ -1,9 +1,25 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { motion } from 'framer-motion';
 const griditems = ["grid1","grid2","grid8","grid4","grid3","grid6","grid7","grid5"];
 
 
 const ClientPage = () => {
+
+  const [isBlinking, setIsBlinking] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsBlinking((prevIsBlinking) => !prevIsBlinking);
+    }, 500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
+
+
   return (
     <motion.div className='flex flex-col md:grid md:grid-cols-3 gap-3 mx-8 '
     // initial="hidden"
@@ -19,11 +35,13 @@ const ClientPage = () => {
     
     
     >
-    <div className=' text-2xl ss:text-3xl md:text-5xl mb-7 uppercase' ><h2>WHY Genesiz mep?
+    <div className='flex flex-col gap-2 text-2xl ss:text-3xl md:text-5xl mb-7 uppercase' ><h2><h1>WHY</h1><h1>Genesiz mep?</h1>
     </h2></div>
     
 
-    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5 hover:bg-textOrange hover:scale-110 transition-all duration-300'>Get your quote</button></a></div>
+    <div className='relative'><a href='/contact'><button className={`hover:bg-textOrange hover:text-white hover:scale-110 transition-all duration-300 font-semibold shadow-2xl shadow-footerBlack font-jost text-xl px-20 py-2 rounded-xl ${isBlinking ? 'bg-black text-white':' bg-textOrange text-white' }`}>
+    Get In Touch
+    </button></a></div>
     </motion.div>
     
 

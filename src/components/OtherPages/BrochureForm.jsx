@@ -2,14 +2,8 @@ import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
 
-const RequestCallbackForm = ({ handleSave }) => {
+const BrochureForm = ({ handleSave }) => {
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '../../../public/assets/brochure.pdf'; // Replace with the actual file path
-    link.download = 'brochure.pdf'; // Replace with the desired file name
-    link.click();
-  };
 
     const InputStyles = " relative bottom-1 rounded-md px-10 py-2  border-solid border-[2px]";
   const ContactSchema = Yup.object().shape({
@@ -37,6 +31,10 @@ const RequestCallbackForm = ({ handleSave }) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             handleSave(values);
+            const link = document.createElement('a');
+            link.href = '../../../public/assets/brochure.pdf'; // Replace with the actual file path
+            link.download = 'brochure.pdf'; // Replace with the desired file name
+            link.click();
             onSubmitProps.resetForm();
           }, 400);
         }}
@@ -59,10 +57,10 @@ const RequestCallbackForm = ({ handleSave }) => {
             className=' shadow-xl  max-w-screen-ss justify-center flex border-solid border-[2px] flex-col py-5 rounded-2xl'
             style={{backgroundColor: "white"}}
           >
-        <div className="flex flex-col gap-8 px-3 md:px-10 py-2 md:py-3  ">
+        <div className="flex flex-col gap-8  px-3 md:px-10 py-2 md:py-3  ">
 
        
-             <div className="relative">
+             <div className="relative text-left">
                 <p>Name:</p>
              <input
                 id='Name'
@@ -84,7 +82,7 @@ const RequestCallbackForm = ({ handleSave }) => {
         
              
               
-             <div className="relative">
+             <div className="relative text-left">
              <p>Phone Number:</p>
             
             <input
@@ -103,7 +101,7 @@ const RequestCallbackForm = ({ handleSave }) => {
            ) : null}
             </div>             
         
-             <div className="relative">
+             <div className="relative text-left">
                 <p>Email:</p>
              
              <input
@@ -134,11 +132,11 @@ const RequestCallbackForm = ({ handleSave }) => {
          </div>
 
               <button
-                className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-5 py-3 hover:scale-110 duration-200 rounded-xl max-w-max' 
+                className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-3 py-2 hover:scale-110 duration-200 rounded-xl max-w-max' 
                 type='submit'
                 disabled={isSubmitting}
               >
-                Submit
+                Download Brochure
               </button>
             
           </form>
@@ -148,4 +146,4 @@ const RequestCallbackForm = ({ handleSave }) => {
   );
 };
 
-export default RequestCallbackForm ;
+export default BrochureForm ;

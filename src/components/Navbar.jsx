@@ -98,7 +98,7 @@ console.log(isScrolled);
 
             <div><a href='/about'>About us</a></div>
             <div><a href='/contact'>Contact</a></div>
-            <div className='rounded-3xl  py-1 hover:bg-textOrange cursor-pointer px-3  border-solid border-[2px] border-textOrange '><a href='/requestaproposal'>Request A Proposal</a></div>
+            <div className='rounded-3xl  py-1 hover:bg-textOrange hover:text-white cursor-pointer px-3  border-solid border-[2px] border-textOrange '><a href='/requestaproposal'>Request A Proposal</a></div>
         </div>): (<>
           {
             isMenuOpen ? <Close onClick={()=>setIsMenuOpen(false)} size={30} className="transition duration-1000"></Close> : <Menu onClick={()=>setIsMenuOpen(true)} size={30} className=" hover:scale-100 transition-all duration-1000"></Menu>

@@ -6,12 +6,12 @@ const LandingCard = ({data}) => {
 
   
    <div className={` bg-textOrange  text-white px-2 py-2 text-center`}>
-    <h4>VISION</h4>
+    <h4 className='text-3xl'>VISION</h4>
     <p>To be the trailblazers in the Construction Engineering industry by being fast and adaptable to the changing needs</p>
     
     </div>
     <div className={` bg-white  text-black px-2 py-2 text-center`}>
-    <h4>CORE PURPOSE</h4>
+    <h4 className='text-3xl'>CORE PURPOSE</h4>
     <p>Quick,
 Affordable,
 Drama Free Service
@@ -19,7 +19,7 @@ with zero change orders</p>
     
     </div>
     <div className={`  bg-textGrey  text-white px-2 py-2 text-center`}>
-    <h4>BRAND PROMISE</h4>
+    <h4 className='text-3xl'>BRAND PROMISE</h4>
     {/* <p>To be the trailblazers in the Construction Engineering industry by being fast and adaptable to the changing needs</p> */}
     <ul>
         <li>90% first time approval</li>
