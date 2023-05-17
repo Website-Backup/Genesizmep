@@ -50,10 +50,10 @@ const Contact = ({ handleSave }) => {
           details:'',
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+          setTimeout(() => {            
             handleSave(values);
             onSubmitProps.resetForm();
+            alert('We recieved your Message. Our team will contact you soon!');
           }, 400);
         }}
        validationSchema={ContactSchema}

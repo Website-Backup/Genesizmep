@@ -34,10 +34,10 @@ const RequestCallbackForm = ({ handleSave }) => {
           PhoneNumber: ''
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+          setTimeout(() => {            
             handleSave(values);
             onSubmitProps.resetForm();
+            alert('We recieved your Request. Our team will contact you soon!');
           }, 400);
         }}
        validationSchema={ContactSchema}

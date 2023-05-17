@@ -29,7 +29,6 @@ const BrochureForm = ({ handleSave }) => {
         }}
         onSubmit={(values, onSubmitProps) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             handleSave(values);
             const link = document.createElement('a');
             link.href = '../../../public/assets/brochure.pdf'; // Replace with the actual file path

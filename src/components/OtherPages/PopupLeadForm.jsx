@@ -13,7 +13,7 @@ const PopupLeadForm = ({visible}) => {
  return()=>{
   setInterval(()=>{
       setShowMyForm(true);
-  },75000)};
+  },60000)};
   },[]);
 
   useEffect(() => {

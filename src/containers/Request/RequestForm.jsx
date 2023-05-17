@@ -52,11 +52,10 @@ const RequestForm = ({ data, handleSave, }) => {
           service:''
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+          setTimeout(() => {            
             handleSave(values);
-            onSubmitProps.resetForm()
-            
+            onSubmitProps.resetForm();
+            alert('We recieved your Request. Our team will contact you soon!');
           }, 400);
         }}
        validationSchema={ContactSchema}
@@ -243,7 +242,7 @@ const RequestForm = ({ data, handleSave, }) => {
                <option value="Plumbing">Plumbing</option>
              
             </select>
-             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="type">Select the type of project*</label>
+             {/* <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="type">Select the type of project*</label> */}
           
            </div>
          
