@@ -12,6 +12,10 @@ import PopupLeadForm from '../components/OtherPages/PopupLeadForm';
 import OurService from '../containers/Homepage/OurService';
 import Engineering from '../components/OtherPages/Engineering';
 import Member from '../containers/AboutUs/Member';
+import ClientPage from '../containers/Homepage/ClientPage'
+import Working from '../containers/Homepage/Working'
+import Industries from '../containers/Homepage/Industries'
+import OnDemandEng from '../containers/Homepage/OnDemanEng'
 
 const OtherPages = ({data}) => {
   
@@ -26,11 +30,15 @@ const OtherPages = ({data}) => {
         <LandingPage props={data} ></LandingPage>
         <SecPage></SecPage>
         <Engineering></Engineering>
+        <ClientPage></ClientPage>
         <OurService></OurService>
         <ThirdPage></ThirdPage>
         <ContactPage></ContactPage>
         <FifthPage></FifthPage>
+        <Working></Working>
+        <Industries></Industries>
         <SixthPage></SixthPage>
+        <OnDemandEng></OnDemandEng>
         <SeventhPage></SeventhPage>
         <Member></Member>
         <Footer></Footer>

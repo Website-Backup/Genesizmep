@@ -11,6 +11,7 @@ import Footer from '../containers/Homepage/Footer'
 import OurService from '../containers/Homepage/OurService'
 import { useFirebase } from '../context/Firebase'
 import PopupLeadForm from '../components/OtherPages/PopupLeadForm'
+import FifthPage from "../containers/OtherPages/FifthPage";
 
 
 
@@ -37,6 +38,7 @@ const Homepage = () => {
         <OurService></OurService>
         <Industries></Industries>
         <Working></Working>
+        <FifthPage></FifthPage>
         <OnDemandEng></OnDemandEng>
         <Contact handleSave={addData} ></Contact>
         <Footer></Footer>

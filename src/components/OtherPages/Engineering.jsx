@@ -5,7 +5,7 @@ const Engineering = () => {
 
   if (window.location.pathname=='/hvac'){
     return(
-        <div className='flex flex-col justify-center items-center gap-4'>
+        <div className='flex flex-col justify-center items-center gap-4 py-10'>
             <h1 className='text-5xl'>HVAC</h1>
             <ul className='flex flex-col gap-3 text-xl px-10' style={{ listStyleType: 'square' }}>
                 <li>Detailed study before the design execution with architectural drawing.</li>
@@ -30,7 +30,7 @@ warranty details. Frequent project inspection and report making.</li>
 
   if (window.location.pathname=='/fireprotection'){
     return(
-        <div className='flex flex-col justify-center items-center gap-4'>
+        <div className='flex flex-col justify-center items-center gap-4 py-10'>
             <h1 className='text-5xl'>FIRE PROTECTION</h1>
             <ul className='flex flex-col gap-3 text-xl px-10' style={{ listStyleType: 'square' }}>
                 <li>Detailed design as per NBC and check list norms.</li>
@@ -57,7 +57,7 @@ warranty details. Frequent project inspection and report making.</li>
 
   if (window.location.pathname=='/electrical'){
     return(
-        <div className='flex flex-col justify-center items-center gap-4'>
+        <div className='flex flex-col justify-center items-center gap-4 py-10'>
             <h1 className='text-5xl'>ELECTRICAL</h1>
             <ul className='flex flex-col gap-3 text-xl px-10' style={{ listStyleType: 'square' }}>
                 <li>Detailed project study before the design.</li>
@@ -96,7 +96,7 @@ warranty details. Frequent project inspection and report making.</li>
 
   if (window.location.pathname=='/plumbing'){
     return(
-        <div className='flex flex-col justify-center items-center gap-5'>
+            <div className='flex flex-col justify-center items-center gap-4 py-10'>
             <h1 className='text-5xl'>PLUMBING</h1>
             <p className='text-lg ss:text-3xl px-10'>Services are rendered from conception to commissioning of 
 each project, enabling the owner/ Architect/Planner to arrive 
@@ -114,7 +114,7 @@ at an optimum design and installation forthe following:
                 <li>Infrastructure consultancy system.</li>  
             </ul>
 
-        </div>
+            </div>
 
 
     )
