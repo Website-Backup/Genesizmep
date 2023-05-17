@@ -9,11 +9,13 @@ const PopupLeadForm = ({visible}) => {
   const [showMyForm, setShowMyForm] = useState(true);
 
   useEffect(()=>{
+  const Interval =setInterval(()=>{
+      setShowMyForm(true);
+  },60000);
 
  return()=>{
-  setInterval(()=>{
-      setShowMyForm(true);
-  },60000)};
+   clearInterval(Interval)
+  };
   },[]);
 
   useEffect(() => {
