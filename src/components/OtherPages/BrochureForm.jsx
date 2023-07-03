@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
+import { dateTime } from "../dateTime";
 
 const BrochureForm = ({ handleSave }) => {
 
@@ -16,7 +17,7 @@ const BrochureForm = ({ handleSave }) => {
   });
   
     return (
-    <div className="flex flex-col justify-center items-center py-4 mb-8">
+    <div className="flex flex-col justify-center items-center p-8">
       <div className='flex justify-between items-center mb-5 shadow-xl'>
 
       </div>
@@ -29,6 +30,8 @@ const BrochureForm = ({ handleSave }) => {
         }}
         onSubmit={(values, onSubmitProps) => {
           setTimeout(() => {
+            values["dateTime"]=dateTime;
+            values["type"] = "Download Broucher";
             handleSave(values);
             const link = document.createElement('a');
             link.href = '../../../public/assets/brochure.pdf'; // Replace with the actual file path

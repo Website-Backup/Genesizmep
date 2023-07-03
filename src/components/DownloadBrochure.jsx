@@ -35,18 +35,20 @@ function BrochureDownloadButton() {
         Download Brochure
         </button>}
         {popup ?
-        <div className='fixed top-0 left-0 w-full h-full justify-center items-center bg-black bg-opacity-25' style={{zIndex: '5000',backgroundColor: 'rgb(0, 0, 0, 0.7)'}}>
-            <div className='flex flex-col justify-center items-center h-full p-10'>
-              <BrochureForm handleSave={addData}></BrochureForm>
+        <div className='fixed top-0 left-0 w-full h-full justify-center items-center bg-black bg-opacity-25' style={{zIndex: '5000',backgroundColor: 'rgb(0, 0, 0, 0.8)'}}>
+            <div className='flex flex-col justify-center items-center h-full w-full p-10'>
+              <div className="flex flex-col justify-center items-end ">
+                <button className='text-black text-xl bg-white ' onClick={()=>{handlePopup(false)}}>
+                  <div className='flex justify-center items-center gap-2'>
+                    {/* <h1 className='text-black'>Close</h1> */}
+                    <Close size={30}></Close>
+                  </div>
+                </button>
+                <BrochureForm handleSave={addData}></BrochureForm>
+              </div>
             </div>
-            <div className="absolute top-0 right-0 px-5 py-3 bg-white rounded-lg">
-              <button className='text-black text-xl' onClick={()=>{handlePopup(false)}}>
-                <div className='flex justify-center items-center gap-2'>
-                  <h1 className='text-black'>Close</h1>
-                  <Close size={30}></Close>
-                </div>
-              </button>
-            </div>
+            {/* <div className="absolute top-0 right-0 px-5 py-3 bg-white rounded-lg">
+            </div> */}
         </div>
       :<></>}
 

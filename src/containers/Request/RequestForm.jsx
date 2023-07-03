@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
+import { dateTime } from "../../components/dateTime";
 
 
 const RequestForm = ({ data, handleSave, }) => {
@@ -52,7 +53,9 @@ const RequestForm = ({ data, handleSave, }) => {
           service:''
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {            
+          setTimeout(() => {
+            values["dateTime"]=dateTime;
+            values["type"] = "Request A Proposal";            
             handleSave(values);
             onSubmitProps.resetForm();
             alert('We recieved your Request. Our team will contact you soon!');

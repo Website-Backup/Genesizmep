@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
+import { dateTime } from "../dateTime";
 
 const RequestCallbackForm = ({ handleSave }) => {
 
@@ -34,7 +35,9 @@ const RequestCallbackForm = ({ handleSave }) => {
           PhoneNumber: ''
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {            
+          setTimeout(() => {   
+            values["dateTime"]=dateTime;
+            values["type"] = "Request A CallBack";         
             handleSave(values);
             onSubmitProps.resetForm();
             alert('We recieved your Request. Our team will contact you soon!');
