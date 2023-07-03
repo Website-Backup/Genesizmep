@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
+import { dateTime } from "../../components/dateTime";
 
 const Contact = ({ handleSave }) => {
     const InputStyles = " relative bottom-1 rounded-md p-2  border-solid border-[2px]";
@@ -50,7 +51,9 @@ const Contact = ({ handleSave }) => {
           details:'',
         }}
         onSubmit={(values, onSubmitProps) => {
-          setTimeout(() => {            
+          setTimeout(() => {
+            values["dateTime"]=dateTime;
+            values["type"] = "Contact Form";               
             handleSave(values);
             onSubmitProps.resetForm();
             alert('We recieved your Message. Our team will contact you soon!');
